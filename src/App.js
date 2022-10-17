@@ -1,4 +1,5 @@
 import "./App.css";
+import Education from "./components/Education";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Skills from "./components/Skills";
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Main />
       <Skills />
+      <Education />
     </div>
   );
 }

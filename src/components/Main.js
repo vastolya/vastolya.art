@@ -9,16 +9,14 @@ const main = () => {
       <div className="bg-red-400 flex-grow p-8">
         <div className="text-4xl md:font-bold">
           <a
-            className="text-red-500 hover:text-blue-500 transition-color ease-in duration-700"
+            className=""
             href="#"
           >
             Anatoly Vasilev
           </a>
         </div>
         <div>Film Director</div>
-        <div>
-          Text
-        </div>
+        <div>Text</div>
         <Button />
       </div>
       <div className="bg-blue-500 w-72 rounded-full overflow-hidden m-auto">
