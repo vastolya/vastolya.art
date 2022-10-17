@@ -7,7 +7,7 @@ const main = () => {
   return (
     <div className="px-4 py-8 bg-red-300 md:flex">
       <div className="bg-red-400 flex-grow p-8">
-        <div className="text-4xl md:font-bold">
+        <div className="text-4xl md:font-bold pb-8">
           <a
             className=""
             href="#"
@@ -15,8 +15,8 @@ const main = () => {
             Anatoly Vasilev
           </a>
         </div>
-        <div>Film Director</div>
-        <div>Text</div>
+        <div className="text-2xl pb-2">Film Editor &amp; Web Developer</div>
+        <div className="text-xl pb-4">29 y.o. Based in Georgia</div>
         <Button />
       </div>
       <div className="bg-blue-500 w-72 rounded-full overflow-hidden m-auto">
