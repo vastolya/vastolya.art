@@ -21,7 +21,7 @@ const main = () => {
         </div>
         <Button />
       </div>
-      <div className="bg-blue-500 rounded-full overflow-hidden">
+      <div className="bg-blue-500 w-72 rounded-full overflow-hidden m-auto">
         <img src={main__photo} alt="" className="max-h-72 max-w-72 m-auto" />
       </div>
     </div>
