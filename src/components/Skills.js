@@ -4,6 +4,7 @@ import HoverableDiv from "./HoverableDiv.js";
 
 const Skills = () => {
   return (
+    <div className="container__layout bg-red-300 px-4 py-8">
     <div className="px-4 py-8  bg-red-400 text-center">
       <ul className="md:flex md:justify-around">
         <li className="px-8 pb-8 md:pb-0">
@@ -72,6 +73,7 @@ const Skills = () => {
           </ul>
         </li>
       </ul>
+    </div>
     </div>
   );
 };
