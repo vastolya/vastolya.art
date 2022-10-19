@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ReactTooltip from "react-tooltip";
-import HoverableDiv from "./HoverableDiv.js";
 
 const Skills = () => {
   return (

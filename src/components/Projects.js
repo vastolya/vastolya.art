@@ -1,9 +1,13 @@
 import HoverVideoPlayer from "react-hover-video-player";
 import testJpg from "../assets/test_1x1.jpg";
 import testMov from "../assets/test.MOV";
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { CenterModal, ModalTitle, ModalCloseTarget } from 'react-spring-modal';
+import 'react-spring-modal/styles.css'
 
 const Projects = () => {
+
+  const [isOpen, setOpen] = React.useState(false);
 
   return (
     <div className="grid grid-cols-1 max-w-screen-md md:grid-cols-2 md:max-w-screen-2xl m-auto bg-red-300">
@@ -87,6 +91,15 @@ const Projects = () => {
           </div>
         }
       />
+    <>
+      <button onClick={() => setOpen(true)}>Open center modal</button>
+      <CenterModal isOpen={isOpen} onDismiss={() => setOpen(false)}>
+        <ModalTitle>My Center Modal</ModalTitle>
+        <ModalCloseTarget>
+          <button>Close</button>
+        </ModalCloseTarget>
+      </CenterModal>
+    </>
     </div>
   );
 };
