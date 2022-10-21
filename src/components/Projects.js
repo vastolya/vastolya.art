@@ -35,18 +35,17 @@ const Projects = () => {
   const onSelected = (id) => {
     setSelected(id);
   };
-  
+
   const handleClose = () => {
-    setSelected(undefined)
-  }
+    setSelected(undefined);
+  };
 
   return (
-    <div className="grid gap-0 grid-cols-1 max-w-screen-md md:grid-cols-2 md:max-w-screen-2xl m-auto bg-red-300">
+    <div className="grid gap-0 grid-cols-1 max-w-screen-md md:grid-cols-2 md:max-w-screen-2xl mx-auto bg-red-300">
       {PROJECTS_LIST.map((project) => {
         return (
           <Fragment key={project.id}>
-            
-            <button className="block" onClick={() => onSelected(project.id)}>
+            <button className="leading-disable" onClick={() => onSelected(project.id)}>
               <HoverVideoPlayer
                 videoSrc={project.videoSrc}
                 pausedOverlay={
@@ -58,6 +57,8 @@ const Projects = () => {
                       width: "100%",
                       height: "100%",
                       objectFit: "cover",
+                      paddingBottom: 0,
+                                            
                     }}
                   />
                 }
