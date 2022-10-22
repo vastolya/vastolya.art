@@ -9,8 +9,7 @@
     "react-scripts": "5.0.1",
     "react-spring": "^9.5.5",
     "react-spring-modal": "^2.0.7",
-    "react-tooltip": "^4.4.0",
-    "react-youtube": "^10.0.0"
+    "react-tooltip": "^4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -4,7 +4,6 @@ import testMov from "../assets/test.MOV";
 import React, { useState, useEffect, useCallback, Fragment } from "react";
 import { CenterModal, ModalTitle, ModalCloseTarget } from "react-spring-modal";
 import "react-spring-modal/styles.css";
-import YouTube from "react-youtube";
 
 const PROJECTS_LIST = [
   {
@@ -55,12 +54,11 @@ const Projects = () => {
   };
 
   const opts = {
-    height: "480",
+    height: "100%",
     width: "100%",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
-      playing: true,
-      autoplay: 1,    
+      autoplay: 0,
     },
   };
 
@@ -99,11 +97,21 @@ const Projects = () => {
               onDismiss={handleClose}
             >
               <ModalTitle>
-                <YouTube
+                {/* <YouTube
                   videoId={project.videoId}
                   opts={opts}
                   onReady={onPlayerReady}
-                />
+                /> */}
+                <div className="aspect-video bg-red-500">
+                  <iframe
+                    className="w-full h-full"
+                    src={`https://www.youtube.com/embed/${project.videoId}?autoplay=1`}
+                    title={project.title}
+                    frameBorder={0}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </ModalTitle>
               <ModalCloseTarget>
                 <div className="text-xl py-8">{project.title}</div>
