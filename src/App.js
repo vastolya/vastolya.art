@@ -16,17 +16,14 @@ function App() {
 
     //   <Education />
     // </div>
-
     <>
-    <div className="bg-slate-200 flex justify-around h-12">
-      <div className="m-3">vastolya.art</div>
-      <ul className="flex gap-x-12 m-3">
-        <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/skills">Skills</Link></li>
-        <li><Link to="/education">Education</Link></li>
-      </ul>
-    </div>
-        <Routes>
+      <nav className="flex justify-between md:max-w-screen-2xl mx-auto px-20 py-10">
+        <Link to="/">vastolya.art</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/skills">Skills</Link>
+        <Link to="/education">Education</Link>
+      </nav>
+      <Routes>
         <Route index element={<Main />} />
         <Route path="projects" element={<Projects />} />
         <Route path="skills" element={<Skills />} />

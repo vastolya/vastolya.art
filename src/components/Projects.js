@@ -58,12 +58,11 @@ const Projects = () => {
     width: "100%",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
-      autoplay: 0,
     },
   };
 
   return (
-    <div className="grid gap-0 grid-cols-1 max-w-screen-md md:grid-cols-2 md:max-w-screen-2xl mx-auto bg-red-300">
+    <div className="grid gap-0 grid-cols-1 w-full md:grid-cols-2 md:max-w-screen-2xl mx-auto overflow-hidden">
       {PROJECTS_LIST.map((project) => {
         return (
           <Fragment key={project.id}>
@@ -74,14 +73,14 @@ const Projects = () => {
               <HoverVideoPlayer
                 videoSrc={project.videoSrc}
                 pausedOverlay={
-                  <img
-                    src={project.pausedOverlay}
+                  <div
                     alt=""
                     style={{
                       // Make the image expand to cover the video's dimensions
                       width: "100%",
                       height: "100%",
-                      objectFit: "cover",
+                      backgroundImage: `url(${project.pausedOverlay})`,
+                      backgroundSize: "cover",
                     }}
                   />
                 }
@@ -102,7 +101,7 @@ const Projects = () => {
                   opts={opts}
                   onReady={onPlayerReady}
                 /> */}
-                <div className="aspect-video bg-red-500">
+                <div className="aspect-video">
                   <iframe
                     className="w-full h-full"
                     src={`https://www.youtube.com/embed/${project.videoId}?autoplay=1`}
