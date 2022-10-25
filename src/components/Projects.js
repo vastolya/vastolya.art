@@ -2,8 +2,8 @@ import HoverVideoPlayer from "react-hover-video-player";
 import testJpg from "../assets/test_1x1.jpg";
 import testMov from "../assets/test.MOV";
 import React, { useState, useEffect, useCallback, Fragment } from "react";
-import { CenterModal, ModalTitle, ModalCloseTarget } from "react-spring-modal";
-import "react-spring-modal/styles.css";
+// import { CenterModal, ModalTitle, ModalCloseTarget } from "react-spring-modal";
+// import "react-spring-modal/styles.css";
 
 const PROJECTS_LIST = [
   {
@@ -37,9 +37,10 @@ const PROJECTS_LIST = [
 ];
 
 const Projects = () => {
-  const [isOpen, setOpen] = React.useState(false);
-  const [selected, setSelected] = useState();
 
+  // const [isOpen, setOpen] = React.useState(false);
+  
+  const [selected, setSelected] = useState();
   const onSelected = (id) => {
     setSelected(id);
   };
@@ -48,10 +49,10 @@ const Projects = () => {
     setSelected(undefined);
   };
 
-  const onPlayerReady = (event) => {
-    // access to player in all event handlers via event.target
-    event.target.pauseVideo();
-  };
+  // const onPlayerReady = (event) => {
+  //   // access to player in all event handlers via event.target
+  //   event.target.pauseVideo();
+  // };
 
   const opts = {
     height: "100%",
@@ -70,7 +71,7 @@ const Projects = () => {
               className="leading-disable"
               onClick={() => onSelected(project.id)}
             >
-              <HoverVideoPlayer
+              <HoverVideoPlayer className="z-0"
                 videoSrc={project.videoSrc}
                 pausedOverlay={
                   <div
@@ -91,16 +92,11 @@ const Projects = () => {
                 }
               />
             </button>
-            <CenterModal
+            {/* <CenterModal
               isOpen={project.id === selected}
               onDismiss={handleClose}
             >
               <ModalTitle>
-                {/* <YouTube
-                  videoId={project.videoId}
-                  opts={opts}
-                  onReady={onPlayerReady}
-                /> */}
                 <div className="aspect-video">
                   <iframe
                     className="w-full h-full"
@@ -116,7 +112,7 @@ const Projects = () => {
                 <div className="text-xl py-8">{project.title}</div>
                 <button className="text-sm underline">close</button>
               </ModalCloseTarget>
-            </CenterModal>
+            </CenterModal> */}
           </Fragment>
         );
       })}
