@@ -13,7 +13,6 @@ function App() {
     //   <Projects />
     //   <Main />
     //   <Skills />
-
     //   <Education />
     // </div>
     // <>
@@ -45,23 +44,23 @@ function App() {
       <nav className="fixed top-0 left-0 bg-white w-full shadow z-10">
         <div className="container m-auto flex justify-between items-center text=gray-700">
           <h1 className="pl-8 py-4 text-xl font-bold">
-            <Link to="/" className="">
+            <Link to="/">
               vastolya.art
             </Link>
           </h1>
           <ul className="hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer">
-            <li className="hover:bg-gray-200 py-4 px-6">
-              <Link to="/projects" className="">
+            <li>
+              <Link to="/projects" className="hover:bg-gray-200 py-4 px-6">
                 projects
               </Link>
             </li>
-            <li className="hover:bg-gray-200 py-4 px-6">
-              <Link to="/skills" className="">
+            <li>
+              <Link to="/skills" className="hover:bg-gray-200 py-4 px-6">
                 cv
               </Link>
             </li>
-            <li className="hover:bg-gray-200 py-4 px-6">
-              <Link to="/education" className="">
+            <li>
+              <Link to="/education" className="hover:bg-gray-200 py-4 px-6">
                 contacts
               </Link>
             </li>
