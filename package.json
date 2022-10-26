@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hover-video-player": "^9.7.1",
@@ -10,9 +11,11 @@
     "react-scripts": "5.0.1",
     "react-spring": "^9.5.5",
     "react-spring-modal": "^2.0.7",
-    "react-tooltip": "^4.4.0"
+    "react-tooltip": "^4.4.0",
+    "source-map-explorer": "^2.5.3"
   },
   "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
