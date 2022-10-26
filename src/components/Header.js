@@ -3,9 +3,8 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "../App.css";
 
 const HEADER_LIST = [
-  { linkName: "projects", routeName: "/projects" },
-  { linkName: "random", routeName: "/random" },
-  { linkName: "cv", routeName: "/education" },
+  { linkName: "catalog", routeName: "/catalog" },
+  { linkName: "cv", routeName: "/cv" },
   { linkName: "contacts", routeName: "/skills" },
 ];
 
