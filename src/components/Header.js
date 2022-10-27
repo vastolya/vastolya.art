@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "../App.css";
 
 const HEADER_LIST = [
-  { linkName: "catalog", routeName: "/catalog" },
+  { linkName: "projects", routeName: "/projects" },
   { linkName: "cv", routeName: "/cv" },
-  { linkName: "contacts", routeName: "/skills" },
+  { linkName: "contacts", routeName: "/сontacts" },
 ];
 
 const header = () => {

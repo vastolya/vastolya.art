@@ -3,9 +3,10 @@ import "./App.css";
 
 import Header from "./components/Header";
 import Main from "./components/Main";
-import Catalog from "./components/Catalog";
 import Cv from "./components/Cv";
 import Contacts from "./components/Contacts";
+import ProjectsPage from "./pages/ProjectsPage";
+import SingleProjectPage from "./pages/SingleProjectPage";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<Main />} />
-        <Route path="skills" element={<Contacts />} />
+        <Route path="сontacts" element={<Contacts />} />
         <Route path="cv" element={<Cv />} />
-        <Route path="catalog" element={<Catalog />} />
+        <Route path="projects" element={<ProjectsPage />} />
+        <Route path="projects/:projectId" element={<SingleProjectPage />} />
       </Routes>
     </>
   );
