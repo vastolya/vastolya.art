@@ -25,11 +25,11 @@ const Projects = () => {
 
   const data = shuffle(Object.values(PROJECTS_LIST)).slice(0, 4);
 
-  const LOADER = (
-    <div className="bg-black bg-opacity-80 w-full h-full flex items-center justify-center">
-      <span className="loader-moon"></span>
-    </div>
-  );
+  // const LOADER = (
+  //   <div className="bg-black bg-opacity-80 w-full h-full flex items-center justify-center">
+  //     <span className="loader-moon"></span>
+  //   </div>
+  // );
 
   return (
     <div className="grid gap-0 grid-cols-1 w-full md:grid-cols-2 md:max-w-screen-2xl mx-auto">
@@ -61,7 +61,7 @@ const Projects = () => {
                     }}
                   />
                 }
-                loadingOverlay={LOADER}
+                // loadingOverlay={LOADER}
               />
             </button>
             {/* <CenterModal

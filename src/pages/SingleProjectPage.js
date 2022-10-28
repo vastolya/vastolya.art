@@ -7,14 +7,12 @@ const SingleProjectPage = () => {
   const data = PROJECTS_LIST[projectId];
 
   return (
-    <div className="grid gap-0 grid-cols-1 w-full md:max-w-screen-2xl mx-auto whitespace-pre">
-      <div>
-        Project ID: {projectId} <br />
-        Data:
-        {!!data
-          ? JSON.stringify(PROJECTS_LIST[projectId], null, 4)
-          : "No data 404"}
-      </div>
+    <div className="px-8 py-4 whitespace-pre">
+      Project ID: {projectId} <br />
+      Data:
+      {!!data
+        ? JSON.stringify(PROJECTS_LIST[projectId], null, 4)
+        : "No data 404"}
     </div>
   );
 };
