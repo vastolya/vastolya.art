@@ -1,6 +1,8 @@
 import HoverVideoPlayer from "react-hover-video-player";
 
 import React, { useState, useEffect, useCallback, Fragment } from "react";
+import { BrowserRouter, Routes, Route, Link, } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 import shuffle from "lodash/shuffle";
 import { PROJECTS_LIST } from "../api/projectsList";
 // import { CenterModal, ModalTitle, ModalCloseTarget } from "react-spring-modal";
@@ -10,6 +12,8 @@ const Projects = () => {
   // const [isOpen, setOpen] = React.useState(false);
 
   const [selected, setSelected] = useState();
+
+  
   const onSelected = (id) => {
     setSelected(id);
   };
@@ -36,7 +40,7 @@ const Projects = () => {
       {data.map((project) => {
         return (
           <Fragment key={project.id}>
-            <button className="bg-gray-50" onClick={() => onSelected(project.id)}>
+            <Link to={`projects/${project.id}`} className="bg-gray-50">
               <HoverVideoPlayer
                 className="z-0"
                 videoSrc={project.videoSrc}
@@ -63,7 +67,7 @@ const Projects = () => {
                 }
                 // loadingOverlay={LOADER}
               />
-            </button>
+            </Link>
             {/* <CenterModal
               isOpen={project.id === selected}
               onDismiss={handleClose}
