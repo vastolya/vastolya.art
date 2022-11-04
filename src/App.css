@@ -1,13 +1,15 @@
+
 .container__layout {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .button {
-    display: inline-block;
-    border: solid;
-    border-radius: 64px;
-    text-align: center;
-    padding: 16px;
+  display: inline-block;
+  border: solid;
+  border-radius: 64px;
+  text-align: center;
+  padding: 16px;
 }
+

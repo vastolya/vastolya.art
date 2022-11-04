@@ -19,7 +19,8 @@ export const PROJECTS_LIST = {
     videoId: "d2gQYhUiu20",
     title: "Art Zakladky - Sanya Zakirov",
     releaseDate: "29.11.2020",
-    description: "project description prototype",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
   },
   second: {
     id: "second",
@@ -28,7 +29,8 @@ export const PROJECTS_LIST = {
     videoId: "d6O03m1Toe4",
     title: "Art Zakladky - Sasha Blosyak",
     releaseDate: "21.08.2020",
-    description: "project description prototype",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
   },
   third: {
     id: "third",
@@ -37,8 +39,9 @@ export const PROJECTS_LIST = {
     videoId: "KHB-V0fQw9k",
     title: "Art Zakladky - Alexey Martins",
     releaseDate: "30.01.2022",
-    description: "project description prototype",
-  },
+    description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
+},
   fourth: {
     id: "fourth",
     pausedOverlay: artRomaJpg,
@@ -46,8 +49,9 @@ export const PROJECTS_LIST = {
     videoId: "KHB-V0fQw9k",
     title: "Art Zakladky - Roma Soida",
     releaseDate: "03.01.2021",
-    description: "project description prototype",
-  },
+    description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
+},
   fith: {
     id: "fith",
     pausedOverlay: artAzbuniakJpg,
@@ -55,8 +59,9 @@ export const PROJECTS_LIST = {
     videoId: "Gdrd5Ub51EA",
     title: "Art Zakladky - Azbuniak",
     releaseDate: "22.05.2020",
-    description: "project description prototype",
-  },
+    description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
+},
   sixth: {
     id: "sixth",
     pausedOverlay: artLukeJpg,
@@ -64,6 +69,7 @@ export const PROJECTS_LIST = {
     videoId: "9bxevb7J_sA",
     title: "Art Zakladky - Vadim Luke",
     releaseDate: "30.06.2020",
-    description: "project description prototype",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
   },
 };
