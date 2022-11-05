@@ -13,23 +13,33 @@ const Header = () => {
 
   return (
     <header className="">
-      <nav className="container flex justify-between items-top px-8 py-4 mx-auto">
-        <div className="flex items-start"> <Link to="/" className="block hover:bg-gray-200 w-full">vastolya.art</Link></div>
-        <div className={toggle ? "hidden" : "block md:hidden "}>
-          <div className="gap-2 grid z-20 ">
+      <nav className="container flex justify-between items-top px-8 py-4 mx-auto relative">
+        <div className="flex items-start">
+          {" "}
+          <Link to="/" className="block hover:bg-gray-200 w-full">
+            vastolya.art
+          </Link>
+        </div>
+        <div className={toggle ? "hidden" : "block md:hidden"}>
+          <div className="gap-2 grid z-20 bg-white right-0 top-0 left-auto absolute pt-4 px-16 shadow-sm">
             {HEADER_LIST.map((item) => {
-              return   (  <Link
-              to={item.routeName}
-              className="block hover:bg-gray-200 w-full"
+              return (
+                <Link
+                  to={item.routeName}
+                  className="block hover:bg-gray-200 w-full"
+                  onClick={() => showMenu(!toggle)}
+                >
+                  {item.linkName}
+                </Link>
+              );
+            })}
+            <button
+              className="text-sm min-h-[40px] block"
               onClick={() => showMenu(!toggle)}
             >
-              {item.linkName}
-            </Link> )
-            })}
+              close
+            </button>
           </div>
-          <button className="text-sm" onClick={() => showMenu(!toggle)}>
-            close
-          </button>
         </div>
         <button
           className={toggle ? "block md:hidden" : "hidden"}
@@ -39,15 +49,17 @@ const Header = () => {
           <div className="w-4 h-0.5 bg-gray-600 mb-1"></div>
           <div className="w-4 h-0.5 bg-gray-600 mb-0"></div>
         </button>
-        <div className="hidden md:flex gap-10 ">
-        {HEADER_LIST.map((item) => {
-              return   (  <Link
-              to={item.routeName}
-              className="block hover:bg-gray-200 w-full"
-            >
-              {item.linkName}
-            </Link> )
-            })}
+        <div className="hidden md:flex gap-10">
+          {HEADER_LIST.map((item) => {
+            return (
+              <Link
+                to={item.routeName}
+                className="block hover:bg-gray-200 w-full"
+              >
+                {item.linkName}
+              </Link>
+            );
+          })}
         </div>
       </nav>
     </header>
