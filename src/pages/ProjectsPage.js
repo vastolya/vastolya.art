@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useCallback, Fragment } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { React } from "react";
+import { Link } from "react-router-dom";
 import { PROJECTS_LIST } from "../api/projectsList";
+import ReadMoreReadLess from "../components/ReadMoreReadLess";
 
 const ProjectsPage = () => {
   const data = Object.values(PROJECTS_LIST);
-
-  const [toggle, showText] = useState(true);
 
   return (
     // <div className="grid gap-0 grid-cols-1 w-full md:max-w-screen-2xl mx-auto">
@@ -42,9 +41,8 @@ const ProjectsPage = () => {
               {project.title}
             </Link>
             <div>
-            <div className={toggle ? "truncate" : ""}>{project.description}</div>
-            <button className="text-gray-500 pb-4" onClick={() => showText(!toggle)}>read more...</button>
-            </div>
+            <ReadMoreReadLess>{project.description}</ReadMoreReadLess>
+               </div>
           </div>
         ))}
       </div>
