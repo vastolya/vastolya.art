@@ -1,8 +1,7 @@
 import HoverVideoPlayer from "react-hover-video-player";
 
-import React, { useState, useEffect, useCallback, Fragment } from "react";
-import { BrowserRouter, Routes, Route, Link, } from "react-router-dom";
-import { useNavigate } from "react-router-dom"
+import React, { useState, Fragment } from "react";
+import { Link, } from "react-router-dom";
 import shuffle from "lodash/shuffle";
 import { PROJECTS_LIST } from "../api/projectsList";
 // import { CenterModal, ModalTitle, ModalCloseTarget } from "react-spring-modal";
