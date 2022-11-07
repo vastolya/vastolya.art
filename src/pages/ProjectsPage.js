@@ -8,17 +8,19 @@ const ProjectsPage = () => {
 
   return (
     <div className="">
-      <div className="md:max-w-screen-2xl md:grid md:grid-cols-3 mx-auto">
+      <div className="md:max-w-screen-2xl md:grid md:grid-cols-3 md:pt-2 mx-auto">
         {data.map((project) => (
-          <div key={project.releaseDate} className="px-8 py-4">
-            <div className="">
-              <img
-                src={project.pausedOverlay}
-                alt=""
-                className="pb-2 md:mx-auto"
-              />
+          <div key={project.releaseDate} className="px-8 pb-2 pt-1">
+            <div className="mb-4">
+              <Link to={project.id}>
+                <img
+                  src={project.pausedOverlay}
+                  alt=""
+                  className="md:mx-auto overflow-hidden rounded-md"
+                />
+              </Link>
             </div>
-            <div>
+            <div className="mb-2 md:mb-8">
               <Link
                 to={project.id}
                 className="text-xl md:text-2xl no-underline hover:underline"
@@ -26,7 +28,7 @@ const ProjectsPage = () => {
                 {project.title}
               </Link>
             </div>
-            <div>
+            <div className="md:hidden">
               <ReadMoreReadLess>{project.description}</ReadMoreReadLess>
             </div>
           </div>
