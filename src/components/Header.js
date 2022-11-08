@@ -16,7 +16,7 @@ const Header = () => {
       <nav className="container flex justify-between items-top px-8 py-4 mx-auto relative">
         <div className="flex items-start">
           {" "}
-          <Link to="/" className="block hover:bg-gray-200 w-full">
+          <Link to="/" className="block hover:bg-gray-200 w-full ">
             vastolya.art
           </Link>
         </div>

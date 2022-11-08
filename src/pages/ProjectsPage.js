@@ -20,7 +20,7 @@ const ProjectsPage = () => {
                 />
               </Link>
             </div>
-            <div className="mb-2 md:mb-8">
+            <div className="mb-2">
               <Link
                 to={project.id}
                 className="text-xl md:text-2xl no-underline hover:underline"
@@ -28,7 +28,7 @@ const ProjectsPage = () => {
                 {project.title}
               </Link>
             </div>
-            <div className="md:hidden">
+            <div className="">
               <ReadMoreReadLess>{project.description}</ReadMoreReadLess>
             </div>
           </div>
