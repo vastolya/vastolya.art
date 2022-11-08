@@ -4,6 +4,38 @@ import ReactTooltip from "react-tooltip";
 import myPhoto from "../assets/main__photo.jpg";
 
 const Cv = () => {
+  const EXPERIENCE_LIST = {
+    first: {
+      id: "XXIX",
+      companyName: "2019 Winter Universiade",
+      CompanyDescription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar.",
+      companyDates: "2018 - 2019",
+      companySite: "https://en.wikipedia.org/wiki/2019_Winter_Universiade",
+      companyLocation: "Krasnoyarsk",
+    },
+    second: {
+      id: "XXIX",
+      companyName: "Hearst Shkulev Media",
+      CompanyDescription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur.",
+      companyDates: "2019 - 2020",
+      companySite: "https://en.wikipedia.org/wiki/Hearst_Shkulev_Media",
+      companyLocation: "Krasnoyarsk",
+    },
+    third: {
+      id: "XXIX",
+      companyName: "'Mfond' Ecological Foundation",
+      CompanyDescription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices.",
+      companyDates: "2021 - 2022",
+      companySite: "https://ecosphere.press/about/",
+      companyLocation: "Moscow",
+    },
+  };
+
+  const experience = Object.values(EXPERIENCE_LIST);
+
   return (
     // <div>
     //   <div className="px-4 py-8 bg-red-300 md:flex">
@@ -110,37 +142,47 @@ const Cv = () => {
     //   </div>
     // </div>
     <div className="md:max-w-screen-2xl mx-auto">
-      <div className="bg-gray-200 grid grid-cols-3 gap-10">
-        <div className="py-4 px-8 bg-pink-200 border border-gray-400">
-          <img src={myPhoto} alt="" className="w-[300px] rounded-2xl mx-auto" />
-        </div>
-        <div className="flex flex-col py-4 px-8 bg-pink-200 border border-gray-400">
-          <div className="text-xl">Anatoly Vasilev</div>
+      <div className="grid md:grid-cols-3 gap-10 py-4 px-8">
+        <div className="flex flex-col col-span-3  border border-gray-100">
           <div className="text-2xl">
             Film Editor, Motion Designer, Web Developer
           </div>
-          <div>Based in Bangkok</div>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-10">
-        <div className="col-span-2 bg-pink-200 border border-gray-400">
-          <div>EXPERIENCE</div>
-          <div>EXPERIENCE</div>
-          <div>EXPERIENCE</div>
-          <div>EXPERIENCE</div>
-          <div>EXPERIENCE</div>
-          <div>EXPERIENCE</div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-4 px-8">
+        <div className="border border-gray-100">
+          <div className="py-4 px-8">
+            <img
+              src={myPhoto}
+              alt=""
+              className="w-[300px] rounded-2xl mx-auto"
+            />
+          </div>
+          <div className="py-4 px-8">
+            <div className="text-xl">Anatoly Vasilev</div>
+            <div>vozrast</div>
+            <div>location</div>
+          </div>
+          <div className="py-4 px-8">
+            <div>linkedin</div>
+            <div>email</div>
+            <div>telegram</div>
+          </div>
         </div>
-        <div className="bg-pink-200 border border-gray-400">
-          <div>SKILLS</div>
-          <div>SKILLS</div>
-          <div>SKILLS</div>
-          <div>SKILLS</div>
-          <div>SKILLS</div>
-          <div>SKILLS</div>
-          <div>SKILLS</div>
+        <div className="md:col-span-2 border border-gray-100">
+          {experience.reverse().map((company) => (
+            <div className="py-4 px-8">
+              <div>{company.companyName}</div>
+              <div>{company.CompanyDescription}</div>
+              <div>{company.companySite}</div>
+              <div>{company.companyLocation}</div>
+              <div>{company.companyDates}</div>
+            </div>
+          ))}
         </div>
       </div>
+      <div></div>
     </div>
   );
 };
