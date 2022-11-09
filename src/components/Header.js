@@ -4,8 +4,8 @@ import "../App.css";
 
 const HEADER_LIST = [
   { linkName: "projects", routeName: "/projects" },
+  { linkName: "about", routeName: "/about" },
   { linkName: "cv", routeName: "/cv" },
-  { linkName: "contacts", routeName: "/сontacts" },
 ];
 
 const Header = () => {
