@@ -9,7 +9,7 @@ const Cv = () => {
       id: "2019WU",
       companyName: "2019 Winter Universiade",
       CompanyDescription:
-        "There was international sports event. My function is create team of video-operators and film-editors, write technical tasks and result review. Work with documetns.",
+        "There was international sports event. My function is create the team of video operators and film editors, write technical tasks and result review. Work with documents.",
       companyDates: "2018 - 2019",
       companySite: "https://en.wikipedia.org/wiki/2019_Winter_Universiade",
       companyLocation: "Krasnoyarsk",
@@ -18,7 +18,7 @@ const Cv = () => {
       id: "HSM",
       companyName: "Hearst Shkulev Media",
       CompanyDescription:
-        "A local news-website. I filmed youtube-documentary, created motion design for social media.",
+        "A local news website. I filmed youtube documentary, created motion design for social media.",
       companyDates: "2019 - 2020",
       companySite: "https://en.wikipedia.org/wiki/Hearst_Shkulev_Media",
       companyLocation: "Krasnoyarsk",
@@ -29,12 +29,34 @@ const Cv = () => {
       CompanyDescription:
         "I filmed, edited and created motion design for a youtube channel with the team of ecological news website.",
       companyDates: "2021 - 2022",
-      companySite: "https://ecosphere.press/about/",
+      companySite: "https://ecosphere.press",
       companyLocation: "Moscow",
     },
   };
 
+  const EDUCATION_LIST = {
+    first: {
+      id: "RSSUSI",
+      educationName: "Reshetnev Siberian State University of Science and Technology",
+      educationDescription:
+        "Information security",
+      educationDates: "2010 - 2014",
+      educationSite: "",
+      educationLocation: "Krasnoyarsk",
+    },
+    second: {
+      id: "MASC",
+      educationName: "Modern Art School 'Conception'",
+      educationDescription:
+        "Video Art and Communications Strategy",
+      educationDates: "2021 - 2022",
+      educationSite: "",
+      educationLocation: "Moscow",
+    },
+  };
+
   const experience = Object.values(EXPERIENCE_LIST);
+  const education = Object.values(EDUCATION_LIST);
 
   return (
     // <div>
@@ -144,7 +166,7 @@ const Cv = () => {
     <div className="md:max-w-screen-2xl mx-auto">
       <div className="grid md:grid-cols-3 gap-10 py-4 px-8">
         <div className="flex flex-col col-span-3  border border-gray-100">
-          <div className="text-2xl">
+          <div className="text-lg md:text-2xl">
             Film Editor, Motion Designer, Web Developer
           </div>
         </div>
@@ -160,34 +182,56 @@ const Cv = () => {
             />
           </div>
           <div className="py-4 px-8">
-            <div className="text-xl">Anatoly Vasilev</div>
-            <div>vozrast</div>
+            <div className="text-lg md:text-2xl">Anatoly Vasilev</div>
             <div>location</div>
-          </div>
-          <div className="py-4 px-8">
-            <div>linkedin</div>
-            <div>email</div>
-            <div>telegram</div>
           </div>
         </div>
         <div className="md:col-span-2 border border-gray-100">
+          <div className="py-4 px-8 text-sm md:text-base text-gray-500">
+            Expirience
+          </div>
           {experience.reverse().map((company) => (
             <div className="py-4 px-8 grid grid-col-2">
               <a
                 href={company.companySite}
                 target="blank"
-                className="no-underline hover:underline md:text-2xl"
+                className="no-underline hover:underline text-lg pb-2 md:text-2xl"
               >
                 {company.companyName}
               </a>
-              <div className="col-span-2 w-full">
+              <div className="text-base w-full md:col-span-2 md:text-lg pb-2">
                 {company.CompanyDescription}
               </div>
-              <div className="text-sm">
+              <div className="text-xs md:text-sm">
                 {company.companyLocation}, {company.companyDates}
               </div>
             </div>
           ))}
+        </div>
+        <div className="md:col-span-1 border border-gray-100">
+          <div className="py-4 px-8 text-sm md:text-base text-gray-500">
+            Education
+          </div>
+          {education.map((teachers) => (
+            <div className="py-2 px-8 grid grid-col-2">
+              <div       
+                className="text-base md:text-lg pb-2"
+              >
+                {teachers.educationName}
+              </div>
+              <div className="text-sm md:text-base pb-2">
+                {teachers.educationDescription}
+              </div>
+              <div className="text-xs md:text-sm">
+                {teachers.educationLocation}, {teachers.educationDates}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="md:col-span-2 border border-gray-100">
+          <div className="pt-4 px-8 text-sm md:text-base text-gray-500">
+            Exhibitions
+          </div>
         </div>
       </div>
       <div></div>

@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 
 const Contacts = () => {
   return (
-    <h1> Contacts </h1>
+    <div>
+      <div className="max-w-screen-2xl mx-auto">
+        <h1> download CV </h1>
+      </div>
+    </div>
   );
 };
 
