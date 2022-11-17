@@ -2,61 +2,16 @@ import React, { useState, useEffect, useCallback, Fragment } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
 import myPhoto from "../assets/main__photo.jpg";
+import {
+  EXPERIENCE_LIST,
+  EDUCATION_LIST,
+  EXHIBITIONS_LIST,
+} from "../api/projectsList";
 
 const Cv = () => {
-  const EXPERIENCE_LIST = {
-    first: {
-      id: "2019WU",
-      companyName: "2019 Winter Universiade",
-      CompanyDescription:
-        "There was international sports event. My function is create the team of video operators and film editors, write technical tasks and result review. Work with documents.",
-      companyDates: "2018 - 2019",
-      companySite: "https://en.wikipedia.org/wiki/2019_Winter_Universiade",
-      companyLocation: "Krasnoyarsk",
-    },
-    second: {
-      id: "HSM",
-      companyName: "Hearst Shkulev Media",
-      CompanyDescription:
-        "A local news website. I filmed youtube documentary, created motion design for social media.",
-      companyDates: "2019 - 2020",
-      companySite: "https://en.wikipedia.org/wiki/Hearst_Shkulev_Media",
-      companyLocation: "Krasnoyarsk",
-    },
-    third: {
-      id: "ECO",
-      companyName: "'Mfond' Ecological Foundation",
-      CompanyDescription:
-        "I filmed, edited and created motion design for a youtube channel with the team of ecological news website.",
-      companyDates: "2021 - 2022",
-      companySite: "https://ecosphere.press",
-      companyLocation: "Moscow",
-    },
-  };
-
-  const EDUCATION_LIST = {
-    first: {
-      id: "RSSUSI",
-      educationName: "Reshetnev Siberian State University of Science and Technology",
-      educationDescription:
-        "Information security",
-      educationDates: "2010 - 2014",
-      educationSite: "",
-      educationLocation: "Krasnoyarsk",
-    },
-    second: {
-      id: "MASC",
-      educationName: "Modern Art School 'Conception'",
-      educationDescription:
-        "Video Art and Communications Strategy",
-      educationDates: "2021 - 2022",
-      educationSite: "",
-      educationLocation: "Moscow",
-    },
-  };
-
   const experience = Object.values(EXPERIENCE_LIST);
   const education = Object.values(EDUCATION_LIST);
+  const exhibition = Object.values(EXHIBITIONS_LIST);
 
   return (
     // <div>
@@ -165,7 +120,7 @@ const Cv = () => {
     // </div>
     <div className="md:max-w-screen-2xl mx-auto">
       <div className="grid md:grid-cols-3 gap-10 py-4 px-8">
-        <div className="flex flex-col col-span-3  border border-gray-100">
+        <div className="flex flex-col col-span-3">
           <div className="text-lg md:text-2xl">
             Film Editor, Motion Designer, Web Developer
           </div>
@@ -173,7 +128,7 @@ const Cv = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-4 px-8">
-        <div className="border border-gray-100">
+        <div className="">
           <div className="py-4 px-8">
             <img
               src={myPhoto}
@@ -182,20 +137,20 @@ const Cv = () => {
             />
           </div>
           <div className="py-4 px-8">
-            <div className="text-lg md:text-2xl">Anatoly Vasilev</div>
-            <div>location</div>
+            <div className="text-lg md:text-2xl pb-2">Anatoly Vasilev</div>
+            <div>Based in Bangkok</div>
           </div>
         </div>
-        <div className="md:col-span-2 border border-gray-100">
+        <div className="md:col-span-2">
           <div className="py-4 px-8 text-sm md:text-base text-gray-500">
             Expirience
           </div>
           {experience.reverse().map((company) => (
-            <div className="py-4 px-8 grid grid-col-2">
+            <div className="py-2 px-8 grid grid-col-2" key={experience.id}>
               <a
                 href={company.companySite}
                 target="blank"
-                className="no-underline hover:underline text-lg pb-2 md:text-2xl"
+                className="no-underline hover:underline text-base pb-2 md:text-lg"
               >
                 {company.companyName}
               </a>
@@ -208,15 +163,13 @@ const Cv = () => {
             </div>
           ))}
         </div>
-        <div className="md:col-span-1 border border-gray-100">
+        <div className="md:col-span-1">
           <div className="py-4 px-8 text-sm md:text-base text-gray-500">
             Education
           </div>
-          {education.map((teachers) => (
+          {education.reverse().map((teachers) => (
             <div className="py-2 px-8 grid grid-col-2">
-              <div       
-                className="text-base md:text-lg pb-2"
-              >
+              <div className="text-base md:text-lg pb-2">
                 {teachers.educationName}
               </div>
               <div className="text-sm md:text-base pb-2">
@@ -228,10 +181,27 @@ const Cv = () => {
             </div>
           ))}
         </div>
-        <div className="md:col-span-2 border border-gray-100">
-          <div className="pt-4 px-8 text-sm md:text-base text-gray-500">
+        <div className="md:col-span-2">
+          <div className="py-4 px-8 text-sm md:text-base text-gray-500">
             Exhibitions
           </div>
+          {exhibition.map((exhibit) => (
+            <div className="py-2 px-8 grid grid-col-2" key={exhibition.id}>
+              <div className="flex">
+                <a
+                  href={exhibit.exhibitionSite}
+                  target="blank"
+                  className="no-underline hover:underline text-base md:text-lg pb-2"
+                >
+                  {exhibit.exhibitionName}
+                </a>
+              </div>
+              <div className="text-sm md:text-base pb-2">
+                {exhibit.exhibitionDescription}, {exhibit.exhibitionLocation},{" "}
+                {exhibit.exhibitionDates}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <div></div>

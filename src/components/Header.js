@@ -5,7 +5,7 @@ import "../App.css";
 const HEADER_LIST = [
   { linkName: "projects", routeName: "/projects" },
   { linkName: "about", routeName: "/about" },
-  { linkName: "cv", routeName: "/cv" },
+  // { linkName: "cv", routeName: "/cv" },
 ];
 
 const Header = () => {
@@ -28,6 +28,7 @@ const Header = () => {
                   to={item.routeName}
                   className="block hover:bg-gray-200 w-full"
                   onClick={() => showMenu(!toggle)}
+                  key={item.id}
                 >
                   {item.linkName}
                 </Link>
@@ -55,8 +56,10 @@ const Header = () => {
               <Link
                 to={item.routeName}
                 className="block hover:bg-gray-200 w-full"
+                key={item.id}
               >
                 {item.linkName}
+                
               </Link>
             );
           })}
