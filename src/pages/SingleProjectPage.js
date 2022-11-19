@@ -17,9 +17,9 @@ const SingleProjectPage = () => {
     //     : "No data 404"} */}
       <div className="md:max-w-screen-2xl mx-auto">
       <div className="py-4 px-8 md:flex justify-between">
-        <div className="md:flex md:flex-col md:justify-between">
-          <div className="text-xl md:text-2xl pb-2">{data.title}</div>
-          <div className="whitespace-pre-lineb text-base md:text-base pb-2">
+        <div className="md:flex md:flex-col md:justify-between ">
+          <div className="text-xl md:text-2xl pb-4">{data.title}</div>
+          <div className="whitespace-pre-lineb text-base md:text-base pb-4">
             {data.description}
           </div>
           <div className="text-xs md:text-sm pb-2">Release Date: {data.releaseDate}</div>
@@ -27,7 +27,7 @@ const SingleProjectPage = () => {
 
         <div>
           <iframe
-            className="py-2 md:py-4 md:px-8 w-full h-full md:min-w-[800px] md:min-h-[450px]"
+            className="pl-4 w-full h-full md:min-w-[800px] md:min-h-[450px]"
             src={src}
             title="Youtube Player"
             frameBorder="0"

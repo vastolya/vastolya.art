@@ -127,7 +127,7 @@ const Cv = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-4 px-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10 py-4 px-8">
         <div className="">
           <div className="py-4 px-8">
             <img
@@ -138,6 +138,9 @@ const Cv = () => {
           </div>
           <div className="py-4 px-8">
             <div className="text-lg md:text-2xl pb-2">Anatoly Vasilev</div>
+            <div className="flex">
+              <div>linkedin</div><div>linkedin</div><div>linkedin</div>
+            </div>
             <div>Based in Bangkok</div>
           </div>
         </div>
@@ -146,11 +149,11 @@ const Cv = () => {
             Expirience
           </div>
           {experience.reverse().map((company) => (
-            <div className="py-2 px-8 grid grid-col-2" key={experience.id}>
+            <div className="py-2 px-8 grid grid-col-2" key={company.id}>
               <a
                 href={company.companySite}
                 target="blank"
-                className="no-underline hover:underline text-base pb-2 md:text-lg"
+                className="no-underline hover:underline text-lg pb-2 md:text-2xl"
               >
                 {company.companyName}
               </a>
@@ -168,8 +171,8 @@ const Cv = () => {
             Education
           </div>
           {education.reverse().map((teachers) => (
-            <div className="py-2 px-8 grid grid-col-2">
-              <div className="text-base md:text-lg pb-2">
+            <div className="py-2 px-8 grid grid-col-2" key={teachers.id}>
+              <div className="text-lg md:text-2xl pb-2">
                 {teachers.educationName}
               </div>
               <div className="text-sm md:text-base pb-2">
@@ -185,13 +188,13 @@ const Cv = () => {
           <div className="py-4 px-8 text-sm md:text-base text-gray-500">
             Exhibitions
           </div>
-          {exhibition.map((exhibit) => (
-            <div className="py-2 px-8 grid grid-col-2" key={exhibition.id}>
+          {exhibition.reverse().map((exhibit) => (
+            <div className="py-2 px-8 grid grid-col-2" key={exhibit.id}>
               <div className="flex">
                 <a
                   href={exhibit.exhibitionSite}
                   target="blank"
-                  className="no-underline hover:underline text-base md:text-lg pb-2"
+                  className="no-underline hover:underline text-lg md:text-2xl pb-2"
                 >
                   {exhibit.exhibitionName}
                 </a>

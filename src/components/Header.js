@@ -28,7 +28,7 @@ const Header = () => {
                   to={item.routeName}
                   className="block hover:bg-gray-200 w-full"
                   onClick={() => showMenu(!toggle)}
-                  key={item.id}
+                  key={item.linkName}
                 >
                   {item.linkName}
                 </Link>
@@ -56,7 +56,7 @@ const Header = () => {
               <Link
                 to={item.routeName}
                 className="block hover:bg-gray-200 w-full"
-                key={item.id}
+                key={item.linkName}
               >
                 {item.linkName}
                 
