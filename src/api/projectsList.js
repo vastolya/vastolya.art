@@ -10,6 +10,18 @@ import artAzbuniakJpg from "../assets/art_zakladky_azbuniak.jpg";
 import artAzbuniakMp4 from "../assets/art_zakladky_azbuniak.mp4";
 import artLukeJpg from "../assets/art_zakladky_vadim_luke.jpg";
 import artLukeMp4 from "../assets/art_zakladky_vadim_luke.mp4";
+import anthropolandMp4 from "../assets/Anthropoland_Vernissage.mp4"
+import anthropolandJpg from "../assets/Anthropoland_Vernissage.jpg"
+import museumsNigthMp4 from "../assets/museums_night.mp4"
+import museumsNigthJpg from "../assets/museums_night.jpg"
+import lOneJpg from "../assets/l_one_dzhezus.jpg"
+import lOneMp4 from "../assets/l_one_dzhezus.mp4"
+import NoizeJpg from "../assets/noize_mc_dzhezus.jpg"
+import NoizeMp4 from "../assets/noize_mc_dzhezus.mp4"
+import tetraPackMp4 from "../assets/Ecosphere_press_Plastic.mp4"
+import tetraPackJpg from "../assets/Ecosphere_press_Plastic.jpg"
+import anthropolandPromoMp4 from "../assets/Anthropoland_Promo.mp4"
+import anthropolandPromoJpg from "../assets/Anthropoland_Promo.jpg"
 
 export const PROJECTS_LIST = {
   first: {
@@ -18,7 +30,7 @@ export const PROJECTS_LIST = {
     videoSrc: artZakirovMp4,
     videoId: "d2gQYhUiu20",
     title: "Art Zakladky - Sanya Zakirov",
-    releaseDate: "29.11.2020",
+    releaseDate: "29.11.20",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
   },
@@ -28,7 +40,7 @@ export const PROJECTS_LIST = {
     videoSrc: artBlosyakMp4,
     videoId: "d6O03m1Toe4",
     title: "Art Zakladky - Sasha Blosyak",
-    releaseDate: "21.08.2020",
+    releaseDate: "21.08.20",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
   },
@@ -38,7 +50,7 @@ export const PROJECTS_LIST = {
     videoSrc: artAlexeyMp4,
     videoId: "KHB-V0fQw9k",
     title: "Art Zakladky - Alexey Martins",
-    releaseDate: "30.01.2022",
+    releaseDate: "30.01.22",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
   },
@@ -48,7 +60,7 @@ export const PROJECTS_LIST = {
     videoSrc: artRomaMp4,
     videoId: "KHB-V0fQw9k",
     title: "Art Zakladky - Roma Soida",
-    releaseDate: "03.01.2021",
+    releaseDate: "03.01.21",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
   },
@@ -58,7 +70,7 @@ export const PROJECTS_LIST = {
     videoSrc: artAzbuniakMp4,
     videoId: "Gdrd5Ub51EA",
     title: "Art Zakladky - Azbuniak",
-    releaseDate: "22.05.2020",
+    releaseDate: "22.05.20",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
   },
@@ -68,7 +80,67 @@ export const PROJECTS_LIST = {
     videoSrc: artLukeMp4,
     videoId: "9bxevb7J_sA",
     title: "Art Zakladky - Vadim Luke",
-    releaseDate: "30.06.2020",
+    releaseDate: "30.06.20",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
+  },
+  seventh: {
+    id: "seventh",
+    pausedOverlay: anthropolandJpg,
+    videoSrc: anthropolandMp4,
+    videoId: "lt0dK067rLM",
+    title: "Anthropoland - Vernissage",
+    releaseDate: "29.07.22",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
+  },
+  eighth: {
+    id: "eighth",
+    pausedOverlay: anthropolandPromoJpg,
+    videoSrc: anthropolandPromoMp4,
+    videoId: "KbBnmIW0Rb8",
+    title: "Anthropoland - Promo",
+    releaseDate: "29.07.22",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
+  },
+  nineth: {
+    id: "nineth",
+    pausedOverlay: museumsNigthJpg,
+    videoSrc: museumsNigthMp4,
+    videoId: "PtBTRefJAls",
+    title: "Museum Center Ploschad Mira",
+    releaseDate: "18.05.19",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
+  },
+  tenth: {
+    id: "tenth",
+    pausedOverlay: lOneJpg,
+    videoSrc: lOneMp4,
+    videoId: "tldARifWmg8",
+    title: "L One - VJ Dzhezus",
+    releaseDate: "23.04.21",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
+  },
+  eleventh: {
+    id: "eleventh",
+    pausedOverlay: NoizeJpg,
+    videoSrc: NoizeMp4,
+    videoId: "tikhBhn4RQE",
+    title: "Noize MC - VJ Dzhezus",
+    releaseDate: "03.04.21",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
+  },
+  twelth: {
+    id: "twelth",
+    pausedOverlay: tetraPackJpg,
+    videoSrc: tetraPackMp4,
+    videoId: "t_GbqCzr7eY",
+    title: "Ecosphere - TetraPack",
+    releaseDate: "13.12.21",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
   },
@@ -88,7 +160,7 @@ export const EXPERIENCE_LIST = {
     id: "HSM",
     companyName: "Hearst Shkulev Media",
     CompanyDescription:
-      "A local news website. I filmed youtube documentary, created motion design for social media.",
+      "A local news website. I filmed youtube documentaries, created motion design for social media.",
     companyDates: "2019 - 2020",
     companySite: "https://en.wikipedia.org/wiki/Hearst_Shkulev_Media",
     companyLocation: "Krasnoyarsk",
@@ -130,7 +202,8 @@ export const EXHIBITIONS_LIST = {
     exhibitionName: "Media project 'Art Zakladki' during 'Beat Film Festival'",
     exhibitionDescription: "Films House",
     exhibitionDates: "2020",
-    exhibitionSite: "https://www.krasdomkino.ru/events/mediaproekt-art-zakladki-v-ramkah-festivalya-beat-weekend-2020",
+    exhibitionSite:
+      "https://www.krasdomkino.ru/events/mediaproekt-art-zakladki-v-ramkah-festivalya-beat-weekend-2020",
     exhibitionLocation: "Russia, Krasnoyarsk",
   },
   second: {
@@ -138,7 +211,8 @@ export const EXHIBITIONS_LIST = {
     exhibitionName: "Results Review",
     exhibitionDescription: "Kunsthalle nummer sieben",
     exhibitionDates: "2021",
-    exhibitionSite: "https://www.facebook.com/conceptionschool/posts/pfbid02EQdGziJodpsE1CtjMtKZw5HEJLZq1df8Rek5PrZdTwSDxq1KGEmHUxMKi9ajDmfil",
+    exhibitionSite:
+      "https://www.facebook.com/conceptionschool/posts/pfbid02EQdGziJodpsE1CtjMtKZw5HEJLZq1df8Rek5PrZdTwSDxq1KGEmHUxMKi9ajDmfil",
     exhibitionLocation: "Russia, Saint Petersburg",
   },
   third: {
