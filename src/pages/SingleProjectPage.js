@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useCallback, Fragment } from "react";
-import { Link, useParams } from "react-router-dom";
+import { React } from "react";
+import { useParams } from "react-router-dom";
 import { PROJECTS_LIST } from "../api/projectsList";
 
 const SingleProjectPage = () => {

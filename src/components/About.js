@@ -1,6 +1,4 @@
-import React, { useState, useEffect, useCallback, Fragment } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import ReactTooltip from "react-tooltip";
+import { React } from "react";
 import myPhoto from "../assets/main__photo.jpg";
 import {
   EXPERIENCE_LIST,

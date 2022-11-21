@@ -10,8 +10,6 @@
     "react-hover-video-player": "^9.7.1",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
-    "react-spring": "^9.5.5",
-    "react-spring-modal": "^2.0.7",
     "react-tooltip": "^4.4.0",
     "source-map-explorer": "^2.5.3"
   },
