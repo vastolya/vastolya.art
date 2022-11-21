@@ -138,10 +138,28 @@ const Cv = () => {
           </div>
           <div className="py-4 px-8">
             <div className="text-lg md:text-2xl pb-2">Anatoly Vasilev</div>
-            <div className="flex">
-              <div>linkedin</div><div>linkedin</div><div>linkedin</div>
+            <div className="flex gap-4">
+            <a
+                href="https://www.linkedin.com/in/anatoly-vasilev-522649238/"
+                target="blank"
+                className="no-underline hover:underline text-base md:text-lg pb-2"
+              >
+                LinkedIn
+              </a><a
+                href="https://web.facebook.com/profile.php?id=100001149416568"
+                target="blank"
+                className="no-underline hover:underline text-base md:text-lg pb-2"
+              >
+                Facebook
+              </a><a
+                href="https://www.instagram.com/vastolya/"
+                target="blank"
+                className="no-underline hover:underline text-base md:text-lg pb-2"
+              >
+                Instagram
+              </a>
             </div>
-            <div>Based in Bangkok</div>
+            <div className="text-xs md:text-sm">Based in Bangkok</div>
           </div>
         </div>
         <div className="md:col-span-2">
