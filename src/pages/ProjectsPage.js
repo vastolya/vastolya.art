@@ -20,7 +20,7 @@ const ProjectsPage = () => {
           .reverse()
           .slice(0, visible)
           .map((project) => (
-            <div key={project.releaseDate} className="px-8 pb-2 pt-1">
+            <div key={project.releaseDate} className="px-8 pb-2 pt-1 hover:scale-105 transition duration-500">
               <div className="mb-4">
                 <Link to={project.id}>
                   <img

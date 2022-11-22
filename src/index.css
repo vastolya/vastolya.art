@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './theme/loaders.css';
+
 
 body {
   margin: 0;
@@ -13,11 +13,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
-.ModalOverlay {
-  z-index: 999;
-}
