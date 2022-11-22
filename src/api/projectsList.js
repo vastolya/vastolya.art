@@ -100,7 +100,7 @@ export const PROJECTS_LIST = {
     videoSrc: anthropolandPromoMp4,
     videoId: "KbBnmIW0Rb8",
     title: "Anthropoland - Promo",
-    releaseDate: "29.07.22",
+    releaseDate: "22.07.22",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis lectus eu nunc suscipit ultrices. Fusce rutrum nisi volutpat felis sollicitudin pulvinar. Curabitur fermentum semper consectetur. Praesent venenatis varius bibendum. Etiam eleifend, est sit amet mattis porttitor, turpis purus gravida lectus, ut fringilla sapien felis nec lorem. Duis dapibus neque eros. Proin efficitur nibh eros, vitae dictum tellus bibendum tempor. Sed rhoncus risus eget iaculis dapibus. Sed imperdiet erat facilisis risus convallis, vel tincidunt ligula convallis. Pellentesque auctor augue ex, et fermentum ante interdum accumsan. Suspendisse sed nulla posuere, lacinia lectus quis, vestibulum odio. Morbi pellentesque congue metus ut dapibus.",
   },

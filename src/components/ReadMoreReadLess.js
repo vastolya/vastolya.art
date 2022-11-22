@@ -9,9 +9,9 @@ const ReadMoreReadLess = ( { children } ) => {
     }
   
     return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col  md:pb-8'>
         {isReadMoreShown ? children : children.substr(0, 100)}
-        <button onClick={toggleBtn} className="text-sm text-gray-500 py-4">
+        <button onClick={toggleBtn} className="text-sm text-gray-500 py-4 md:hidden">
             {isReadMoreShown ? "...read less" : "read more..."}
         </button>
     </div>

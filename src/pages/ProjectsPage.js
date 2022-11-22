@@ -9,7 +9,7 @@ const ProjectsPage = () => {
   return (
     <div className="">
       <div className="md:max-w-screen-2xl md:grid md:grid-cols-3 md:pt-2 mx-auto">
-        {data.map((project) => (
+        {data.reverse().map((project) => (
           <div key={project.releaseDate} className="px-8 pb-2 pt-1">
             <div className="mb-4">
               <Link to={project.id}>
@@ -29,7 +29,7 @@ const ProjectsPage = () => {
               </Link>
             </div>
             <div className="">
-              <ReadMoreReadLess>{project.description}</ReadMoreReadLess>
+              <ReadMoreReadLess className="">{project.description}</ReadMoreReadLess>
             </div>
           </div>
         ))}
