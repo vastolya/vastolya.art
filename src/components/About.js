@@ -5,6 +5,11 @@ import {
   EDUCATION_LIST,
   EXHIBITIONS_LIST,
 } from "../api/projectsList";
+import facebookIcon from "../assets/icons/facebook_icon.svg";
+import instagramIcon from "../assets/icons/instagram_icon.svg";
+import linkedinIcon from "../assets/icons/linkedin_icon.svg";
+import githubIcon from "../assets/icons/github_icon.svg";
+
 
 const Cv = () => {
   const experience = Object.values(EXPERIENCE_LIST);
@@ -125,7 +130,7 @@ const Cv = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10 py-4 px-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8 py-4 px-8">
         <div className="">
           <div className="py-4 px-8">
             <img
@@ -136,26 +141,37 @@ const Cv = () => {
           </div>
           <div className="py-4 px-8">
             <div className="text-lg md:text-2xl pb-2">Anatoly Vasilev</div>
-            <div className="flex gap-4">
-            <a
-                href="https://www.linkedin.com/in/anatoly-vasilev-522649238/"
-                target="blank"
-                className="no-underline hover:underline text-base md:text-lg pb-2"
-              >
-                LinkedIn
-              </a><a
+            <div className="flex gap-2 md:gap-4 pb-2">
+              <a
                 href="https://web.facebook.com/profile.php?id=100001149416568"
                 target="blank"
                 className="no-underline hover:underline text-base md:text-lg pb-2"
               >
-                Facebook
-              </a><a
+                <img src={facebookIcon} alt="Facebook" className="w-7" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/anatoly-vasilev-522649238/"
+                target="blank"
+                className="no-underline hover:underline text-base md:text-lg pb-2"
+              >
+                <img src={linkedinIcon} alt="LinkedIn" className="w-7" />
+              </a>
+              <a
                 href="https://www.instagram.com/vastolya/"
                 target="blank"
                 className="no-underline hover:underline text-base md:text-lg pb-2"
               >
-                Instagram
+                <img src={instagramIcon} alt="Instagram" className="w-7" />
               </a>
+              <a
+                href="https://github.com/vastolya"
+                target="blank"
+                className="no-underline hover:underline text-base md:text-lg pb-2"
+              >
+                <img src={githubIcon} alt="Github" className="w-7" />
+              </a>
+            
+              
             </div>
             <div className="text-xs md:text-sm">Based in Bangkok</div>
           </div>
