@@ -7,6 +7,8 @@ import About from "./components/About";
 // import CV from "./components/CV";
 import ProjectsPage from "./pages/ProjectsPage";
 import SingleProjectPage from "./pages/SingleProjectPage";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="projects/:projectId" element={<SingleProjectPage />} />
       </Routes>
+    <Footer />
     </>
   );
 }
