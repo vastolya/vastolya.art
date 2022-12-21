@@ -125,7 +125,7 @@ const Cv = () => {
       <div className="grid md:grid-cols-3 gap-10 py-4 px-8">
         <div className="flex flex-col col-span-3">
           <div className="text-lg md:text-2xl">
-            Film Editor, Motion Designer, Web Developer
+            Film Editor, Motion Designer, Frontend Developer
           </div>
         </div>
       </div>

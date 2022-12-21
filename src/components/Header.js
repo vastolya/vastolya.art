@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="">
-      <nav className="container flex justify-between items-top px-8 py-4 mx-auto relative">
+      <nav className="container flex justify-between items-top px-8 py-4 mx-auto relative max-w-7xl">
         <div className="flex items-start">
           {" "}
           <Link to="/" className="block hover:bg-gray-200 w-full ">
